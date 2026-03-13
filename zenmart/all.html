@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../public/css/commend.css" />
@@ -21,10 +21,12 @@
     />
   </head>
   <body>
+    <!--  NAVBAR FRAME -->
+
     <div class="navbar_frame">
       <div class="container">
         <div class="navbar_up">
-          <a href="../index.html">
+          <a href="./index.html">
             <img src="../public/images/icons/logo.png" alt="" />
           </a>
           <div class="navbar_search">
@@ -79,15 +81,15 @@
         <div class="navbar_down">
           <div class="navbar_down_menu_box">
             <div class="browse_box">
-              <img src="../public/images/icons/browse.svg" alt="" />
+              <img src="./public/images/icons/browse.svg" alt="" />
               <span>Browse Categories</span>
             </div>
             <div class="navbar_route_menu">
-              <a href="../index.html">Home</a>
-              <a href="../zenmart/all.html">Shop</a>
-              <a href="../orders/cart.html">Orders</a>
-              <a href="../other/about.html">About</a>
-              <a href="../other/contact.html">Contact</a>
+              <a href="./index.html">Home</a>
+              <a href="./zenmart/all.html">Shop</a>
+              <a href="./orders/cart.html">Orders</a>
+              <a href="./other/about.html">About</a>
+              <a href="./other/contact.html">Contact</a>
             </div>
 
             <div class="sorting_menu">
@@ -101,82 +103,111 @@
       </div>
     </div>
 
-    <div class="shop_page">
-      <div class="product_category_frame">
-        <div class="container">
-          <div class="category_content_top">
-            <a href="">All Electronics</a>
-            <a href="">Smart TV</a>
-            <a href=""> Laptops</a>
-            <a href="">Cell Phones</a>
-            <a href="">Camera & Photo</a>
-            <a href=""> Portable Audio</a>
-            <a href="">Computers</a>
-            <a href=""> iPad & Tablets</a>
-            <a href="">Pc Gaming</a>
-            <a href=""> Smart Home</a>
-            <a href="">Headphones</a>
-          </div>
-          <div class="category_content_bottom">
-            <a href="">Home</a>
-            <a href="">Electronics</a>
-            <a href="">Computers</a>
-            <a href="">Desktop Computers</a>
-          </div>
-        </div>
-      </div>
-      <div class="main_banner_frame">
-        <div class="container">
-          <div class="banner_content">
-            <strong>Save up to $130 on select laptops.</strong>
-            <span
-              >All kind of products in one place. Starts from $1. Get cashbacks
-              & offers</span
-            >
-            <a href="">Shop Deals</a>
-          </div>
-        </div>
-      </div>
-      <div class="product_category_frame">
-        <div class="container">
-          <div class="category_box">
-            <strong>Shop by Category</strong>
-            <span>View All Categories</span>
-          </div>
+    <!-- SHOP PAGE -->
 
-          <div class="product_categoty_wrapper">
-            <div class="product_category_box">
-              <div class="product_category_image_box">
+    <div class="shop_page">
+      <div class="upper_category_top_frame">
+        <div class="container">
+          <div>All Electronics</div>
+          <div>Smart TV</div>
+          <div>Laptops</div>
+          <div>Cell Phone</div>
+          <div>Camera & Photo</div>
+          <div>Portable Audio</div>
+          <div>Computers</div>
+          <div>iPad & Tablets</div>
+          <div>PC Gaming</div>
+          <div>Smart Home</div>
+          <div>Headphones</div>
+        </div>
+      </div>
+      <div class="page_router">
+        <span>Home</span>
+        <span class="drop">/</span>
+        <span>Electronics</span>
+        <span class="drop">/</span>
+        <span>Computers</span>
+        <span class="drop">/</span>
+        <span class="active">Desktop Computers</span>
+      </div>
+      <div class="product_header_frame">
+        <div class="container">
+          <div class="product_header_content">
+            <span>Save up to $130 on select laptops.</span>
+            <p>
+              All kind of products in one place. Starts from $1. Get cashbacks &
+              offers
+            </p>
+            <a href="">Shop Deals</a>
+            <div class="product_pagination_box">
+              <div class="product_pagination_main">
+                <img src="../public/images/icons/arrow-prev_next.svg" alt="" />
+                <div class="pagination_dot">
+                  <div class="dot">
+                    <div></div>
+                  </div>
+                  <div class="dot">
+                    <div></div>
+                  </div>
+                  <div class="dot active">
+                    <div></div>
+                  </div>
+                  <div class="dot">
+                    <div></div>
+                  </div>
+                  <div class="dot">
+                    <div></div>
+                  </div>
+                </div>
+                <img
+                  src="../public/images/icons/arrow-prev_next.svg"
+                  alt=""
+                  style="transform: scaleX(-1)"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shop_category_frame">
+        <div class="container">
+          <div class="category_top">
+            <span>Shop Category</span>
+            <a href="../product/all.html">View All Categories</a>
+          </div>
+          <div class="category_wrapper">
+            <div class="category_box">
+              <div class="category_img_box">
                 <img src="../public/images/category/tv.png" alt="" />
               </div>
-              <span>TVs, Home Theatre, and Accessories</span>
+              <span>TVs, Home, Theatre and Accessories</span>
             </div>
-            <div class="product_category_box">
-              <div class="product_category_image_box">
+            <div class="category_box">
+              <div class="category_img_box">
                 <img src="../public/images/category/computer.png" alt="" />
               </div>
               <span>Computers, Tablets, and Accessories</span>
             </div>
-            <div class="product_category_box">
-              <div class="product_category_image_box">
+            <div class="category_box">
+              <div class="category_img_box">
                 <img src="../public/images/category/smart.png" alt="" />
               </div>
               <span>Smart Home</span>
             </div>
-            <div class="product_category_box">
-              <div class="product_category_image_box">
+            <div class="category_box">
+              <div class="category_img_box">
                 <img src="../public/images/category/headphone.png" alt="" />
               </div>
               <span>Headphones and Portable Speakers</span>
             </div>
-            <div class="product_category_box">
-              <div class="product_category_image_box">
+            <div class="category_box">
+              <div class="category_img_box">
                 <img src="../public/images/category/phone.png" alt="" />
               </div>
               <span>Cell Phones and Accessories</span>
             </div>
-            <div class="product_category_box">
-              <div class="product_category_image_box">
+            <div class="category_box">
+              <div class="category_img_box">
                 <img src="../public/images/category/game.png" alt="" />
               </div>
               <span>Video Games, Consoles, and Accessories</span>
@@ -184,32 +215,839 @@
           </div>
         </div>
       </div>
-      <div class="shop_by_brand_frame">
+      <div class="product_brands_frame">
         <div class="container">
-          <div class="shop_by_brand_top">
-            <strong>Shop by brand</strong>
+          <span class="spec_title">Shop by brand</span>
+          <div class="brands_wrapper">
+            <div class="brand_box active">Apple</div>
+            <div class="brand_box">Dell</div>
+            <div class="brand_box">Hp</div>
+            <div class="brand_box">Lenovo</div>
+            <div class="brand_box">Samsung</div>
+            <div class="brand_box">Asus</div>
+            <div class="brand_box">Acer</div>
+            <div class="brand_box">Sony</div>
           </div>
-          <div class="shop_by_brand_bottom">
-            <a
-              href=""
-              style="
-                border-radius: 6px;
-                background: rgba(68, 50, 151, 1);
-                color: white;
-              "
-              >Apple</a
+        </div>
+      </div>
+      <div class="product_frame">
+        <div class="container">
+          <div class="category_top">
+            <span>Top Selling Product</span>
+            <div class="product_pagination_box" style="margin-top: 0px">
+              <div class="product_pagination_main">
+                <img src="../public/images/icons/arrow-prev_next.svg" alt="" />
+                <div class="pagination_dot">
+                  <div class="dot">
+                    <div></div>
+                  </div>
+                  <div class="dot">
+                    <div></div>
+                  </div>
+                  <div class="dot active">
+                    <div></div>
+                  </div>
+                  <div class="dot">
+                    <div></div>
+                  </div>
+                  <div class="dot">
+                    <div></div>
+                  </div>
+                </div>
+                <img
+                  src="../public/images/icons/arrow-prev_next.svg"
+                  alt=""
+                  style="transform: scaleX(-1)"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="selling_product_wrapper">
+            <div class="product_info">
+              <a href="../product/choosenProduct.html">
+                <img
+                  src="../public/images/products/acer_laptop.png"
+                  alt=""
+                  style="padding: 15px; box-sizing: border-box"
+                />
+              </a>
+              <div class="product_text">
+                <p class="product_title">ACER</p>
+                <a href="../product/choosenProduct.html">
+                  <p class="product_name">
+                    Acer Aspire 5 15.6" <br />Laptop - Silver (Intel Core..
+                  </p>
+                </a>
+
+                <div class="review_box">
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <p>3,014 reviews</p>
+                </div>
+                <div class="price_box">
+                  <strong>$32.50</strong>
+                  <p>$45</p>
+                </div>
+              </div>
+            </div>
+            <div class="product_info">
+              <a href="../product/choosenProduct.html">
+                <img
+                  src="../public/images/products/nitro_laptop.png"
+                  alt=""
+                  style="padding: 15px; box-sizing: border-box"
+                />
+              </a>
+              <div class="product_text">
+                <p class="product_title">ACER</p>
+                <a href="../product/choosenProduct.html">
+                  <p class="product_name">
+                    Acer Nitro 5 15.6" <br />
+                    Gaming Laptop - Black...
+                  </p>
+                </a>
+
+                <div class="review_box">
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <p>3,014 reviews</p>
+                </div>
+                <div class="price_box">
+                  <strong>$32.50</strong>
+                  <p>$45</p>
+                </div>
+              </div>
+            </div>
+            <div class="product_info">
+              <a href="../product/choosenProduct.html">
+                <img
+                  src="../public/images/products/sony_laptop.png"
+                  alt=""
+                  style="padding: 15px; box-sizing: border-box"
+                />
+              </a>
+              <div class="product_text">
+                <p class="product_title">SONY</p>
+                <a href="../product/choosenProduct.html">
+                  <p class="product_name">
+                    Microsoft Surface Laptop <br />
+                    Go 12.4" Multi-Touch...
+                  </p>
+                </a>
+
+                <div class="review_box">
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <p>3,014 reviews</p>
+                </div>
+                <div class="price_box">
+                  <strong>$32.50</strong>
+                  <p>$45</p>
+                </div>
+              </div>
+            </div>
+            <div class="product_info">
+              <a href="../product/choosenProduct.html">
+                <img
+                  src="../public/images/products/acer_silver.png"
+                  alt=""
+                  style="padding: 15px; box-sizing: border-box"
+                />
+              </a>
+              <div class="product_text">
+                <p class="product_title">EASTSPORT</p>
+                <a href="../product/choosenProduct.html">
+                  <p class="product_name">
+                    Acer Aspire 5 15.6" <br />Laptop - Silver (Intel Core..
+                  </p>
+                </a>
+
+                <div class="review_box">
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <p>3,014 reviews</p>
+                </div>
+                <div class="price_box">
+                  <strong>$32.50</strong>
+                  <p>$45</p>
+                </div>
+              </div>
+            </div>
+            <div class="product_info">
+              <a href="../product/choosenProduct.html">
+                <img
+                  src="../public/images/products/asus_laptop.png"
+                  alt=""
+                  style="padding: 15px; box-sizing: border-box"
+                />
+              </a>
+              <div class="product_text">
+                <p class="product_title">ASUS</p>
+                <a href="../product/choosenProduct.html">
+                  <p class="product_name">
+                    ASUS VivoBook 15 X515 15.6" Laptop - Slate Grey...
+                  </p>
+                </a>
+
+                <div class="review_box">
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <p>3,014 reviews</p>
+                </div>
+                <div class="price_box">
+                  <strong>$32.50</strong>
+                  <p>$45</p>
+                </div>
+              </div>
+            </div>
+            <div class="product_info">
+              <a href="../product/choosenProduct.html">
+                <img
+                  src="../public/images/products/rolex_laptop.png"
+                  alt=""
+                  style="padding: 15px; box-sizing: border-box"
+                />
+              </a>
+              <div class="product_text">
+                <p class="product_title">ASUS</p>
+                <a href="../product/choosenProduct.html">
+                  <p class="product_name">
+                    ASUS ROG Strix G15 <br />
+                    15.6" Gaming Laptop...
+                  </p>
+                </a>
+
+                <div class="review_box">
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <p>3,014 reviews</p>
+                </div>
+                <div class="price_box">
+                  <strong>$32.50</strong>
+                  <p>$45</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="laptops_accessories_frame">
+        <div class="container">
+          <div class="laptops_accessories_title">
+            <strong>Laptops and Accessories</strong>
+            <span
+              >Shop laptops, desktops, monitors, tablets, PC gaming, hard drives
+              and storage, accessories and more</span
             >
-            <a href="">Dell</a>
-            <a href="">Hp</a>
-            <a href="">Lenovo</a>
-            <a href="">Samsung</a>
-            <a href="">Asus</a>
-            <a href="">Acer</a>
-            <a href="">Sony</a>
+          </div>
+          <div class="select_boxes">
+            <div class="select_box">
+              <select name="" id="">
+                <option value="" selected disabled>Price</option>
+                <option value="">$1000</option>
+                <option value="">$500</option>
+              </select>
+            </div>
+            <div class="select_box">
+              <select name="" id="">
+                <option value="" selected disabled>Brand</option>
+                <option value="">Sony</option>
+                <option value="">Apple</option>
+              </select>
+            </div>
+            <div class="select_box">
+              <select name="" id="">
+                <option value="" selected disabled>Color</option>
+                <option value="">Black</option>
+                <option value="">Gray</option>
+              </select>
+            </div>
+          </div>
+          <div class="laptop_product_boxes">
+            <div class="product_info">
+              <a href="../product/choosenProduct.html">
+                <img
+                  src="../public/images/products/acer_laptop.png"
+                  alt=""
+                  style="
+                    width: 100%;
+                    padding: 25px 18px;
+                    box-sizing: border-box;
+                  "
+                />
+              </a>
+              <div class="product_text" style="margin-left: 18px 18px 0 0">
+                <p class="product_title">LENOVO</p>
+                <a href="../product/choosenProduct.html">
+                  <p class="product_name">
+                    Lenovo IdeaPad 3 15.6" Laptop - Sand (Intel Core
+                    i7-1165G7/512GB SSD/12GB RAM/Windows 11)
+                  </p>
+                </a>
+
+                <div class="review_box">
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <p>3,014 reviews</p>
+                </div>
+                <div class="price_box">
+                  <strong>$899.99</strong>
+                  <p>$45</p>
+                </div>
+              </div>
+            </div>
+            <div class="product_info">
+              <a href="../product/choosenProduct.html">
+                <img
+                  src="../public/images/products/acer_laptop.png"
+                  alt=""
+                  style="
+                    width: 100%;
+                    padding: 25px 18px;
+                    box-sizing: border-box;
+                  "
+                />
+              </a>
+              <div class="product_text" style="margin-left: 18px 18px 0 0">
+                <p class="product_title">ACUS</p>
+                <a href="../product/choosenProduct.html">
+                  <p class="product_name">
+                    ASUS TUF Dash 15 15.6" Gaming Laptop - Grey (Intel Core
+                    i7-11370H/512GB SSD/16GB RAM/RTX 3060/Win11)
+                  </p>
+                </a>
+
+                <div class="review_box">
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <p>3,014 reviews</p>
+                </div>
+                <div class="price_box">
+                  <strong>$399.00</strong>
+                  <p>$45</p>
+                </div>
+              </div>
+            </div>
+            <div class="product_info">
+              <a href="../product/choosenProduct.html">
+                <img
+                  src="../public/images/category/computer.png"
+                  alt=""
+                  style="
+                    width: 100%;
+                    padding: 25px 18px;
+                    box-sizing: border-box;
+                  "
+                />
+              </a>
+              <div class="product_text" style="margin-left: 18px 18px 0 0">
+                <p class="product_title">Eastsport</p>
+                <a href="../product/choosenProduct.html">
+                  <p class="product_name">
+                    Apple MacBook Air 13.3" w/ Touch ID (Fall 2020) - Space Grey
+                    (Apple M1 Chip / 256GB SSD / 8GB RAM) - En
+                  </p>
+                </a>
+
+                <div class="review_box">
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <p>3,014 reviews</p>
+                </div>
+                <div class="price_box">
+                  <strong>$32.50</strong>
+                  <p>$45</p>
+                </div>
+              </div>
+            </div>
+            <div class="product_info">
+              <a href="../product/choosenProduct.html">
+                <img
+                  src="../public/images/products/sony_notebook.png"
+                  alt=""
+                  style="
+                    width: 100%;
+                    padding: 25px 18px;
+                    box-sizing: border-box;
+                  "
+                />
+              </a>
+              <div class="product_text" style="margin-left: 18px 18px 0 0">
+                <p class="product_title">rolex</p>
+                <a href="../product/choosenProduct.html">
+                  <p class="product_name">
+                    HP 14" Laptop - Silver (Intel Core i3-1115G4/512GB SSD/8GB
+                    RAM/Windows 10)
+                  </p>
+                </a>
+
+                <div class="review_box">
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <p>3,014 reviews</p>
+                </div>
+                <div class="price_box">
+                  <strong>$18.124</strong>
+                  <p>$45</p>
+                </div>
+              </div>
+            </div>
+            <div class="product_info">
+              <a href="../product/choosenProduct.html">
+                <img
+                  src="../public/images/products/sony_laptop.png"
+                  alt=""
+                  style="
+                    width: 100%;
+                    padding: 25px 18px;
+                    box-sizing: border-box;
+                  "
+                />
+              </a>
+              <div class="product_text" style="margin-left: 18px 18px 0 0">
+                <p class="product_title">ACER</p>
+                <a href="../product/choosenProduct.html">
+                  <p class="product_name">
+                    ASUS VivoBook 15 X515 15.6" Laptop - Slate Grey (Intel Core
+                    i3-1005G1/256GB SSD/8GB RAM/Win 11 S)
+                  </p>
+                </a>
+
+                <div class="review_box">
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <p>3,014 reviews</p>
+                </div>
+                <div class="price_box">
+                  <strong>$32.50</strong>
+                  <p>$45</p>
+                </div>
+              </div>
+            </div>
+            <div class="product_info">
+              <a href="../product/choosenProduct.html">
+                <img
+                  src="../public/images/products/acer_laptop.png"
+                  alt=""
+                  style="
+                    width: 100%;
+                    padding: 25px 18px;
+                    box-sizing: border-box;
+                  "
+                />
+              </a>
+              <div class="product_text" style="margin-left: 18px 18px 0 0">
+                <p class="product_title">LENOVO</p>
+                <a href="../product/choosenProduct.html">
+                  <p class="product_name">
+                    Lenovo IdeaPad 3 15.6" Laptop - Sand (Intel Core
+                    i7-1165G7/512GB SSD/12GB RAM/Windows 11)
+                  </p>
+                </a>
+
+                <div class="review_box">
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <p>3,014 reviews</p>
+                </div>
+                <div class="price_box">
+                  <strong>$899.99</strong>
+                  <p>$45</p>
+                </div>
+              </div>
+            </div>
+            <div class="product_info">
+              <a href="../product/choosenProduct.html">
+                <img
+                  src="../public/images/products/acer_laptop.png"
+                  alt=""
+                  style="
+                    width: 100%;
+                    padding: 25px 18px;
+                    box-sizing: border-box;
+                  "
+                />
+              </a>
+              <div class="product_text" style="margin-left: 18px 18px 0 0">
+                <p class="product_title">ACUS</p>
+                <a href="../product/choosenProduct.html">
+                  <p class="product_name">
+                    ASUS TUF Dash 15 15.6" Gaming Laptop - Grey (Intel Core
+                    i7-11370H/512GB SSD/16GB RAM/RTX 3060/Win11)
+                  </p>
+                </a>
+
+                <div class="review_box">
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <p>3,014 reviews</p>
+                </div>
+                <div class="price_box">
+                  <strong>$399.00</strong>
+                  <p>$45</p>
+                </div>
+              </div>
+            </div>
+            <div class="product_info">
+              <a href="../product/choosenProduct.html">
+                <img
+                  src="../public/images/category/computer.png"
+                  alt=""
+                  style="
+                    width: 100%;
+                    padding: 25px 18px;
+                    box-sizing: border-box;
+                  "
+                />
+              </a>
+              <div class="product_text" style="margin-left: 18px 18px 0 0">
+                <p class="product_title">Eastsport</p>
+                <a href="../product/choosenProduct.html">
+                  <p class="product_name">
+                    Apple MacBook Air 13.3" w/ Touch ID (Fall 2020) - Space Grey
+                    (Apple M1 Chip / 256GB SSD / 8GB RAM) - En
+                  </p>
+                </a>
+
+                <div class="review_box">
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <p>3,014 reviews</p>
+                </div>
+                <div class="price_box">
+                  <strong>$32.50</strong>
+                  <p>$45</p>
+                </div>
+              </div>
+            </div>
+            <div class="product_info">
+              <a href="../product/choosenProduct.html">
+                <img
+                  src="../public/images/products/sony_notebook.png"
+                  alt=""
+                  style="
+                    width: 100%;
+                    padding: 25px 18px;
+                    box-sizing: border-box;
+                  "
+                />
+              </a>
+              <div class="product_text" style="margin-left: 18px 18px 0 0">
+                <p class="product_title">rolex</p>
+                <a href="../product/choosenProduct.html">
+                  <p class="product_name">
+                    HP 14" Laptop - Silver (Intel Core i3-1115G4/512GB SSD/8GB
+                    RAM/Windows 10)
+                  </p>
+                </a>
+
+                <div class="review_box">
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <p>3,014 reviews</p>
+                </div>
+                <div class="price_box">
+                  <strong>$18.124</strong>
+                  <p>$45</p>
+                </div>
+              </div>
+            </div>
+            <div class="product_info">
+              <a href="../product/choosenProduct.html">
+                <img
+                  src="../public/images/products/sony_laptop.png"
+                  alt=""
+                  style="
+                    width: 100%;
+                    padding: 25px 18px;
+                    box-sizing: border-box;
+                  "
+                />
+              </a>
+              <div class="product_text" style="margin-left: 18px 18px 0 0">
+                <p class="product_title">ACER</p>
+                <a href="../product/choosenProduct.html">
+                  <p class="product_name">
+                    ASUS VivoBook 15 X515 15.6" Laptop - Slate Grey (Intel Core
+                    i3-1005G1/256GB SSD/8GB RAM/Win 11 S)
+                  </p>
+                </a>
+
+                <div class="review_box">
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <p>3,014 reviews</p>
+                </div>
+                <div class="price_box">
+                  <strong>$32.50</strong>
+                  <p>$45</p>
+                </div>
+              </div>
+            </div>
+            <div class="product_info">
+              <a href="../product/choosenProduct.html">
+                <img
+                  src="../public/images/products/acer_laptop.png"
+                  alt=""
+                  style="
+                    width: 100%;
+                    padding: 25px 18px;
+                    box-sizing: border-box;
+                  "
+                />
+              </a>
+              <div class="product_text" style="margin-left: 18px 18px 0 0">
+                <p class="product_title">LENOVO</p>
+                <a href="../product/choosenProduct.html">
+                  <p class="product_name">
+                    Lenovo IdeaPad 3 15.6" Laptop - Sand (Intel Core
+                    i7-1165G7/512GB SSD/12GB RAM/Windows 11)
+                  </p>
+                </a>
+
+                <div class="review_box">
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <p>3,014 reviews</p>
+                </div>
+                <div class="price_box">
+                  <strong>$899.99</strong>
+                  <p>$45</p>
+                </div>
+              </div>
+            </div>
+            <div class="product_info">
+              <a href="../product/choosenProduct.html">
+                <img
+                  src="../public/images/products/acer_laptop.png"
+                  alt=""
+                  style="
+                    width: 100%;
+                    padding: 25px 18px;
+                    box-sizing: border-box;
+                  "
+                />
+              </a>
+              <div class="product_text" style="margin-left: 18px 18px 0 0">
+                <p class="product_title">ACUS</p>
+                <a href="../product/choosenProduct.html">
+                  <p class="product_name">
+                    ASUS TUF Dash 15 15.6" Gaming Laptop - Grey (Intel Core
+                    i7-11370H/512GB SSD/16GB RAM/RTX 3060/Win11)
+                  </p>
+                </a>
+
+                <div class="review_box">
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <p>3,014 reviews</p>
+                </div>
+                <div class="price_box">
+                  <strong>$399.00</strong>
+                  <p>$45</p>
+                </div>
+              </div>
+            </div>
+            <div class="product_info">
+              <a href="../product/choosenProduct.html">
+                <img
+                  src="../public/images/category/computer.png"
+                  alt=""
+                  style="
+                    width: 100%;
+                    padding: 25px 18px;
+                    box-sizing: border-box;
+                  "
+                />
+              </a>
+              <div class="product_text" style="margin-left: 18px 18px 0 0">
+                <p class="product_title">Eastsport</p>
+                <a href="../product/choosenProduct.html">
+                  <p class="product_name">
+                    Apple MacBook Air 13.3" w/ Touch ID (Fall 2020) - Space Grey
+                    (Apple M1 Chip / 256GB SSD / 8GB RAM) - En
+                  </p>
+                </a>
+
+                <div class="review_box">
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <p>3,014 reviews</p>
+                </div>
+                <div class="price_box">
+                  <strong>$32.50</strong>
+                  <p>$45</p>
+                </div>
+              </div>
+            </div>
+            <div class="product_info">
+              <a href="../product/choosenProduct.html">
+                <img
+                  src="../public/images/products/sony_notebook.png"
+                  alt=""
+                  style="
+                    width: 100%;
+                    padding: 25px 18px;
+                    box-sizing: border-box;
+                  "
+                />
+              </a>
+              <div class="product_text" style="margin-left: 18px 18px 0 0">
+                <p class="product_title">rolex</p>
+                <a href="../product/choosenProduct.html">
+                  <p class="product_name">
+                    HP 14" Laptop - Silver (Intel Core i3-1115G4/512GB SSD/8GB
+                    RAM/Windows 10)
+                  </p>
+                </a>
+
+                <div class="review_box">
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <p>3,014 reviews</p>
+                </div>
+                <div class="price_box">
+                  <strong>$18.124</strong>
+                  <p>$45</p>
+                </div>
+              </div>
+            </div>
+            <div class="product_info">
+              <a href="../product/choosenProduct.html">
+                <img
+                  src="../public/images/products/sony_laptop.png"
+                  alt=""
+                  style="
+                    width: 100%;
+                    padding: 25px 18px;
+                    box-sizing: border-box;
+                  "
+                />
+              </a>
+              <div class="product_text" style="margin-left: 18px 18px 0 0">
+                <p class="product_title">ACER</p>
+                <a href="../product/choosenProduct.html">
+                  <p class="product_name">
+                    ASUS VivoBook 15 X515 15.6" Laptop - Slate Grey (Intel Core
+                    i3-1005G1/256GB SSD/8GB RAM/Win 11 S)
+                  </p>
+                </a>
+
+                <div class="review_box">
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <img src="../public/images/icons/review.svg" alt="" />
+                  <p>3,014 reviews</p>
+                </div>
+                <div class="price_box">
+                  <strong>$32.50</strong>
+                  <p>$45</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pagination_olivero_frame">
+        <div class="container">
+          <div class="next_prew_olivero">
+            <img src="../public/images/icons/next.svg" alt="" />
+          </div>
+          <div class="number_olivero">
+            <span>1</span>
+          </div>
+          <div class="number_olivero">
+            <span>2</span>
+          </div>
+          <div class="number_olivero">
+            <span>3</span>
+          </div>
+          <div class="number_olivero">
+            <span>4</span>
+          </div>
+          <div class="number_olivero">
+            <span>5</span>
+          </div>
+          <div class="dot_olivero">
+            <span>...</span>
+          </div>
+          <div class="number_olivero" style="margin-right: 8px">
+            <span>20</span>
+          </div>
+          <div class="next_prew_olivero">
+            <img
+              src="../public/images/icons/next.svg"
+              alt=""
+              style="transform: scaleX(-1)"
+            />
           </div>
         </div>
       </div>
     </div>
+
+    <!-- FOOTER FRAME -->
 
     <div class="footer_frame">
       <div class="container">
@@ -323,30 +1161,3 @@
     </div>
   </body>
 </html>
-
-<!-- <div class="pagination_banner">
-              <div class="pagination_banner_main">
-                <img src="../public/images/icons/arrow-prev_next.svg" alt="" />
-                <div class="pagination_banner_dot">
-                  <div class="dot">
-                    <div></div>
-                  </div>
-                  <div class="dot">
-                    <div></div>
-                  </div>
-                  <div class="dot">
-                    <div></div>
-                  </div>
-                  <div class="dot active">
-                    <div></div>
-                  </div>
-                  <div class="dot">
-                    <div></div>
-                  </div>
-
-                  <div class="dot">
-                    <div></div>
-                  </div>
-                </div>
-              </div>
-            </div> -->

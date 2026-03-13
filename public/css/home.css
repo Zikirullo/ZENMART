@@ -909,3 +909,12 @@
   align-items: center;
   justify-content: center;
 }
+
+.shop_page .product_category_frame {
+  position: relative;
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: row;
+}
