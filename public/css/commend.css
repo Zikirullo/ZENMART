@@ -18,7 +18,7 @@ p {
 
 .container {
   position: relative;
-  width: 1320px;
+  width: 100%;
   height: auto;
   display: flex;
 }
@@ -519,7 +519,12 @@ p {
 
 .page_router {
   margin: 20px 0px;
+  margin-left: 35px;
   width: 1320px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .page_router span {
